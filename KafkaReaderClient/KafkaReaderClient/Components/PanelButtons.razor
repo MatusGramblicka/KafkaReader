@@ -1,0 +1,15 @@
+﻿
+<div style="float: right">
+    <div style="text-align:right; ">
+        @*@if (_webSocket.State == WebSocketState.Open)
+        {
+            <p style="float:left;margin-right:5px;">Topic to listen:</p>
+            <input style="float:left;margin-right:5px;" @bind="@_topic" />
+            <button style="width: 100px;float:left;margin-right:5px;" class="btn btn-success">Listen</button>
+        }*@
+        <button style="width: 100px;float:left;margin-right:5px;" class="btn btn-danger" @onclick="@OnNotifyClearText">Clear</button>
+            
+        @*<button style="width: 100px;float:left;margin-right:5px;" class="btn btn-success">Listen</button>*@
+            
+    </div>
+</div>
